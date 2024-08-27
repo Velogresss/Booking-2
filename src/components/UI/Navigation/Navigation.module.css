@@ -13,7 +13,7 @@
 }
 
 .rows_box{
-  width: 100%;
+  width: 95%;
 }
 
 .rows{
@@ -36,7 +36,8 @@
 }
 
 .nav_links li {
-  font-size: 16px;
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 24px;
 }
 
 .nav_links li p {

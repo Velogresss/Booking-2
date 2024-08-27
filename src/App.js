@@ -4,6 +4,8 @@ import Footer from './components/UI/Footer/Footer';
 import Content from './components/Path/Content/Content';
 import { AuthContext } from './context/context';
 
+// import myImage from './img/Offer/offer-1.png'; 
+
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -31,6 +33,7 @@ const App = () => {
       setIsAuth
     }} >
       <Navigation navigate={handleNavigate} />
+      {/* <img src={myImage} alt="Description" /> */}
       <Content currentPath={currentPath} />
       <Footer onNavigate={handleNavigate} />
     </AuthContext.Provider>

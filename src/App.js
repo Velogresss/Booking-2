@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Navigation from './components/UI/Navigation/Navigation';
+import Footer from './components/UI/Footer/Footer';
+import Content from './components/Path/Content/Content';
+import { AuthContext } from './context/context';
 
-function App() {
+const App = () => {
+  const [isAuth, setIsAuth] = useState(false);
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  const handleNavigate = (path) => {
+    window.history.pushState({}, '', path);
+    setCurrentPath(path);
+  };
+
+  useEffect(() => {
+    const onPopState = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    window.addEventListener('popstate', onPopState);
+
+    return () => {
+      window.removeEventListener('popstate', onPopState);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContext.Provider value={{
+      isAuth,
+      setIsAuth
+    }} >
+      <Navigation navigate={handleNavigate} />
+      <Content currentPath={currentPath} />
+      <Footer onNavigate={handleNavigate} />
+    </AuthContext.Provider>
   );
 }
 

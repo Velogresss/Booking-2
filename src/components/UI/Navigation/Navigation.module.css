@@ -10,11 +10,11 @@
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-.rows_box{
-  width: 95%;
-}
+/* .rows_box{
+} */
 
 .rows{
   display: flex;
@@ -30,7 +30,7 @@
 .nav_links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 50px;
   margin: 0;
   padding: 0;
 }
@@ -50,4 +50,31 @@
 .nav_links li p:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.another{
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.languageIcon {
+  margin-right: 8px;
+}
+
+select {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
 }

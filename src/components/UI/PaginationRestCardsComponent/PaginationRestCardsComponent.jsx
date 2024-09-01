@@ -57,20 +57,20 @@ import myImage from '../../../img/Offer/offer-1.png';
 const dataRest = [
   { url: myImage, alt: 'Сеул', text: 'Сеул' },
   { url: myImage, alt: 'Лондон', text: 'Лондон' },
-  { url: 'myImage3.jpg', alt: 'Рим', text: 'Рим' },
-  { url: 'myImage4.jpg', alt: 'Париж', text: 'Париж' },
-  { url: 'myImage5.jpg', alt: 'Токіо', text: 'Токіо' },
-  { url: 'myImage6.jpg', alt: 'Шанхай', text: 'Шанхай' },
-  { url: 'myImage7.jpg', alt: 'Франкфурт', text: 'Франкфурт' },
-  { url: 'myImage8.jpg', alt: 'Стамбул', text: 'Стамбул' },
-  { url: 'myImage9.jpg', alt: 'Нью-Йорк', text: 'Нью-Йорк' },
-  { url: 'myImage10.jpg', alt: 'Чикаго', text: 'Чикаго' },
-  { url: 'myImage11.jpg', alt: 'Торонто', text: 'Торонто' },
-  { url: 'myImage12.jpg', alt: 'Ванкувер', text: 'Ванкувер' },
-  { url: 'myImage13.jpg', alt: 'Амстердам', text: 'Амстердам' },
-  { url: 'myImage14.jpg', alt: 'Сінгапур', text: 'Сінгапур' },
-  { url: 'myImage15.jpg', alt: 'Сан-Франциско', text: 'Сан-Франциско' },
-  { url: 'myImage16.jpg', alt: 'Люксембург', text: 'Люксембург' }
+  { url: myImage, alt: 'Рим', text: 'Рим' },
+  { url: myImage, alt: 'Париж', text: 'Париж' },
+  { url: myImage, alt: 'Токіо', text: 'Токіо' },
+  { url: myImage, alt: 'Шанхай', text: 'Шанхай' },
+  { url: myImage, alt: 'Франкфурт', text: 'Франкфурт' },
+  { url: myImage, alt: 'Стамбул', text: 'Стамбул' },
+  { url: myImage, alt: 'Нью-Йорк', text: 'Нью-Йорк' },
+  { url: myImage, alt: 'Чикаго', text: 'Чикаго' },
+  { url: myImage, alt: 'Торонто', text: 'Торонто' },
+  { url: myImage, alt: 'Ванкувер', text: 'Ванкувер' },
+  { url: myImage, alt: 'Амстердам', text: 'Амстердам' },
+  { url: myImage, alt: 'Сінгапур', text: 'Сінгапур' },
+  { url: myImage, alt: 'Сан-Франциско', text: 'Сан-Франциско' },
+  { url: myImage, alt: 'Люксембург', text: 'Люксембург' }
 ];
 
 const PaginationComponent = ({ data, itemsPerPage }) => {

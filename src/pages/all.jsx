@@ -3,6 +3,8 @@ import myImage from '../img/Offer/offer-1.png';
 import bannerImage from '../img/lake.png';
 import PaginationRestCardsComponent from '../components/UI/PaginationRestCardsComponent/PaginationRestCardsComponent';
 import PaginationOfferCardComponent from '../components/UI/PaginationOfferCardComponent/PaginationOfferCardComponent';
+import AboutUs from '../components/UI/AboutUsMainComponent/AboutUs'
+
 
 const dataOffer = [
   {
@@ -27,6 +29,7 @@ function All() {
         <h1>Акційні пропозиції</h1>
         <PaginationOfferCardComponent data={dataOffer} itemsPerPage={6} />
       </div>
+      <AboutUs/>
     </div>
   );
 }

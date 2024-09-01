@@ -2,7 +2,8 @@ import React from 'react';
 import classes from './Navigation.module.css';
 import logoImage from '../../../img/logoImage.png';
 import cartIcon from '../../../img/cartIcon.png'; 
-import languageIcon from '../../../img/languageIcon.png'; 
+
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 const Navigation = ({ navigate }) => {
   return (
@@ -32,13 +33,8 @@ const Navigation = ({ navigate }) => {
       <div className={classes.actions}>
         <img src={cartIcon} alt="Cart" className={classes.cart} onClick={() => navigate('/cart')} />
       </div>
-      <div className={classes.language}>
-        <img src={languageIcon} alt="Language" className={classes.languageIcon} />
-        <select>
-          <option value="UA">UA</option>
-          <option value="EN">EN</option>
-        </select>
-      </div>
+        {/* <h2>{t('Welcome to React')}</h2>; */}
+        <LanguageSwitcher />
       </div>
     </nav>
   );

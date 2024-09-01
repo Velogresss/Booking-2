@@ -3,6 +3,7 @@ import Navigation from './components/UI/Navigation/Navigation';
 import Footer from './components/UI/Footer/Footer';
 import Content from './components/Path/Content/Content';
 import { AuthContext } from './context/context';
+import '../src/translate/i18n'; 
 
 // import myImage from './img/Offer/offer-1.png'; 
 

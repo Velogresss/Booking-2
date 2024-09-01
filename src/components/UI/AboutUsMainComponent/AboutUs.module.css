@@ -1,0 +1,47 @@
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.about-us-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.learn-more-button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more-button:hover {
+    background-color: #e6b800;
+}

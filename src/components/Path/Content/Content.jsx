@@ -1,7 +1,9 @@
 import React from 'react';
 import All from '../../../pages/all';
 import About from '../../../pages/about';
-import Login from '../../../pages/login';
+// import Login from '../../../pages/login';
+import Register from '../../../pages/register';
+import Login from '../../../pages/login'
 
 const Content = ({ currentPath }) => {
   switch (currentPath) {
@@ -22,9 +24,9 @@ const Content = ({ currentPath }) => {
     case '/guarantee':
       return <div>Гарантія обслуговування</div>;
     case '/login':
-      return <Login />;
+      return <Login/>;
     case '/register':
-      return <div>Реєстрація</div>;
+      return <Register />;
     default:
       return <div>Головна сторінка</div>;
   }

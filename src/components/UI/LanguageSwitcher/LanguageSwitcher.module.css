@@ -1,0 +1,19 @@
+.language {
+    display: flex;
+    align-items: center;
+}
+
+.languageIcon {
+    width: 24px; /* Задайте потрібний розмір */
+    height: 24px;
+    margin-right: 8px; /* Простір між іконкою та випадаючим списком */
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}

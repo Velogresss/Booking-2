@@ -1,23 +1,29 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './AboutUs.module.css';
+import classes from './AboutUs.module.css';
+import ImageAbout from '../../../img/ImageForAboutMainComponent.png'
+
 
 function AboutUs() {
     const { t } = useTranslation();
 
     return (
-        <div className="about-us-container">
-            <div className="image-section">
+        <div className={classes.aboutUsContainer}>
+            <div className={classes.aboutUsH1Container}>
+                <h1 className={classes.aboutUsH1}>{t('aboutUs.title')}</h1>
+            </div>
+            <div className={classes.AboutUsContainerForAll}>
+            <div className={classes.imageSection}>
                 <img 
-                    src="image-url"
+                    src={ImageAbout}
                     alt={t('aboutUs.title')}
-                    className="about-us-image"
+                    className={classes.aboutUsImage}
                 />
             </div>
-            <div className="text-section">
-                <h1>{t('aboutUs.title')}</h1>
-                <p>{t('aboutUs.description')}</p>
-                <button className="learn-more-button">{t('aboutUs.button')}</button>
+            <div className={classes.textSection}>
+                <p className={classes.textSectionP}>{t('aboutUs.description')}</p>
+                <button className={classes.learnMoreButton}>{t('aboutUs.button')}</button>
+            </div>
             </div>
         </div>
     );

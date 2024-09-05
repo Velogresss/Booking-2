@@ -1,8 +1,9 @@
 .offer_card {
-  border: 1px solid #ccc;
-  padding: 16px;
-  margin: 16px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  margin: 24px;
   position: relative;
 }
 
@@ -12,25 +13,33 @@
 }
 
 .discount_circle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: orange;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  top: -7%;
+  right: -70%;
+  background-color: #FCB50B;
+  color: #DD1818;
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
 }
 
 .title {
-  font-size: 18px;
-  margin: 12px 0;
+  font-size: 40px;
+  margin-top: -35px;
+  margin-left: 15px;
 }
 
 .description {
-  font-size: 14px;
+  font-size: 24px;
   color: #555;
+  margin-top: 16px;
   margin-bottom: 12px;
 }
 
@@ -41,11 +50,12 @@
 
 .old_price {
   color: #888;
+  font-size: 32px;
   margin-right: 8px;
 }
 
 .new_price {
   color: red;
-  font-size: 24px;
+  font-size: 55px;
   font-weight: bold;
 }
